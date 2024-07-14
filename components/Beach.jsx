@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export const Beach = () => {
+export const Beach = (data) => {
   return (
     <section>
       <div
@@ -34,7 +34,7 @@ export const Beach = () => {
               >
                 <h2 className="sc_item_title sc_action_title sc_align_center sc_item_title_style_default">
                   <i> Unwind on Cleopark&apos;s</i>
-                  <br /> Sandy Beach
+                  <br /> {data}
                 </h2>
                 <div className="sc_action_content sc_item_content">
                   <div className="sc_action_item sc_action_item_default sc_action_item_mc">

@@ -2,10 +2,30 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import { Beach } from "@/components/Beach";
 
-export default function Home() {
+function Home() {
   return (
     <Layout>
-      <Beach />
+      <Beach data={data} />
     </Layout>
   );
 }
+export async function getServerSideProps(context) {
+  try {
+    // Fetch data from an API or other source
+    const data = "Server-side data fetched dynamically";
+
+    return {
+      props: {
+        data,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+    return {
+      props: {
+        data: null, // Ensure data is defined, even if it's null
+      },
+    };
+  }
+}
+export default Home;
