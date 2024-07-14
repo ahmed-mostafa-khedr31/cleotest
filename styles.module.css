@@ -1,0 +1,78 @@
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999999;
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+  object-fit: contain;
+
+  transform: rotate(0deg) scale(1);
+  animation: wave 5s infinite linear;
+  /* background-color: rgb(191, 232, 245);
+  box-shadow: 0 0 5px lightblue; */
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: rotate(0deg) scaleY(1);
+  }
+
+  25% {
+    transform: rotate(5deg) scaleY(1.1);
+  }
+
+  50% {
+    transform: rotate(0deg) scaleY(1);
+  }
+
+  75% {
+    transform: rotate(-5deg) scaleY(1.1);
+  }
+}
+
+/*=======================offer section=======================*/
+/* .offer {
+  background-image: url(../public/images/bg-trans.gif);
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.offer div {
+  z-index: 1;
+}
+
+.offer::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #014e6ad5;
+   
+left: 0;
+top: 0;
+}
+
+.offer a {
+  background-color: #fff !important;
+  color: #00516f !important;
+}
+
+.offer span {
+  color: #00516f !important;
+}
+
+.offer a:hover span {
+  color: #fff !important;
+}
+
+*/

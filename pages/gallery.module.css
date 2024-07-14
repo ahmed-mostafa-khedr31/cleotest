@@ -1,0 +1,44 @@
+.gallery div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.egplayaelement0a {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  top: 50% !important;
+  width: 65px;
+  height: 65px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out !important;
+}
+
+.gallery div a:hover .egplayaelement0a {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out !important;
+}
+.titleLink {
+  transition: all 0.2s ease-in-out;
+}
+.arrow {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.titleLink:hover .arrow {
+  opacity: 1;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .egplayaelement0a {
+    padding: 8px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
