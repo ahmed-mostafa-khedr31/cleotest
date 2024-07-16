@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export const Beach = (data) => {
+export const Beach = () => {
   return (
     <section>
       <div
@@ -34,7 +34,7 @@ export const Beach = (data) => {
               >
                 <h2 className="sc_item_title sc_action_title sc_align_center sc_item_title_style_default">
                   <i> Unwind on Cleopark&apos;s</i>
-                  <br /> {data}
+                  <br />
                 </h2>
                 <div className="sc_action_content sc_item_content">
                   <div className="sc_action_item sc_action_item_default sc_action_item_mc">
@@ -54,9 +54,7 @@ export const Beach = (data) => {
                   passHref
                   className="sc_button color_style_default sc_button_alternative sc_button_size_large sc_button_icon_left sc_button_hover_slide_left sc_button_hover_style_inverse px-5 py-3"
                 >
-                  <a className="sc_button_text">
-                    <span className="sc_button_title">view More</span>
-                  </a>
+                  <span className="sc_button_title">view More</span>
                 </Link>
               </div>
             </div>

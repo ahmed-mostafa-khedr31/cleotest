@@ -5,12 +5,15 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Home</title>
           <meta charSet="UTF-8" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, maximum-scale=1"
           />
-          <meta name="format-detection" content="telephone=no" />
+          <meta name="description" content="Welcome to Cleopark" />
+          <meta name="robots" content="index,follow" />
+          <link rel="canonical" href="https://devreact.titegypt.org" />
 
           <link
             rel="stylesheet"

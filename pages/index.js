@@ -1,14 +1,6 @@
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import { Beach } from "@/components/Beach";
-
-function Home() {
-  return (
-    <Layout>
-      <Beach data={data} />
-    </Layout>
-  );
-}
 export async function getServerSideProps(context) {
   try {
     // Fetch data from an API or other source
@@ -28,4 +20,12 @@ export async function getServerSideProps(context) {
     };
   }
 }
+function Home() {
+  return (
+    <Layout>
+      <Beach />
+    </Layout>
+  );
+}
+
 export default Home;

@@ -45,7 +45,7 @@ const createTiltHandler = (tiltRef) => {
     },
   };
 };
-const Beach = () => {
+const Beach = ({ data }) => {
   const tiltRef1 = useRef(null);
 
   const tiltHandler1 = createTiltHandler(tiltRef1);
@@ -54,6 +54,9 @@ const Beach = () => {
     <>
       <Head>
         <title>Beach</title>
+        <meta name="description" content="Welcome to Cleopark." />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://devreact.titegypt.org/beach" />
       </Head>
       <Layout>
         <section>
